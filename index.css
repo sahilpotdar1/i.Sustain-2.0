@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Scrollbar styling for light and dark mode */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1; /* Light mode thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f5f9; /* Light mode track */
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: #475569; /* Dark mode thumb */
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background-color: #1e293b; /* Dark mode track */
+}
